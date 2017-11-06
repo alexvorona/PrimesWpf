@@ -12,7 +12,7 @@ namespace SimpleWpfApp.ViewModel
     {
         private string _number;
         private bool _numberIsValid;
-        private Prime prime;
+        private Prime _prime;
         private List<int> _primesList;
         private string _content;
         private int _selectedValue;
@@ -21,9 +21,9 @@ namespace SimpleWpfApp.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel()
+        public MainViewModel(Prime prime)
         {
-            prime = new Prime();
+            _prime = prime;
             OkCommand = new RelayCommand(() => { MessageBox.Show($"You have chosen {Number} and {SelectedValue}"); });
             Update(_number);
         }
@@ -99,7 +99,7 @@ namespace SimpleWpfApp.ViewModel
             {
                 NumberIsValid = true;
                 Content = $"Primes up to {x * x}:";
-                PrimesList = prime.GeneratePrimes(x * x);
+                PrimesList = _prime.GeneratePrimes(x * x);
             }
             else
             {
