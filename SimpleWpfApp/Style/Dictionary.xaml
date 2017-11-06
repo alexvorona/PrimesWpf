@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:SimpleWpfApp.Style">
+    <Style x:Key="NumberStyle" TargetType="TextBox">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding NumberIsValid}" Value="true">
+                <Setter Property="TextBox.Background" Value="Green"/>
+            </DataTrigger>
+            <DataTrigger  Binding="{Binding NumberIsValid}" Value="false">
+                <Setter Property="TextBox.Background" Value="Salmon"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
