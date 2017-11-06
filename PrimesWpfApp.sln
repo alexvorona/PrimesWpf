@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesWpfApp", "SimpleWpfApp\PrimesWpfApp.csproj", "{2D0E167B-FB80-4A57-A040-437C64259195}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesUnitTest", "PrimesUnitTest\PrimesUnitTest.csproj", "{14033ED4-37DF-48AF-9302-F36F08754DB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2D0E167B-FB80-4A57-A040-437C64259195}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D0E167B-FB80-4A57-A040-437C64259195}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D0E167B-FB80-4A57-A040-437C64259195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14033ED4-37DF-48AF-9302-F36F08754DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14033ED4-37DF-48AF-9302-F36F08754DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14033ED4-37DF-48AF-9302-F36F08754DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14033ED4-37DF-48AF-9302-F36F08754DB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
